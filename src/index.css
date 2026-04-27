@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-primary: #2563eb; /* Blue accent */
+  --color-brand-secondary: #64748b; /* Slate */
+  --color-brand-bg: #fdfdfd;
+  --color-brand-dark: #1a1a1a;
+  --color-brand-line: #e2e8f0;
+  
+  --font-sans: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-mono: 'Courier New', monospace;
+}
+
+@layer base {
+  body {
+    @apply bg-brand-bg text-brand-dark font-sans antialiased pb-12;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-brand-dark font-black tracking-tight uppercase;
+  }
+}
+
+/* Geometric Balance Layout Helpers */
+.main-frame {
+  @apply border-[0px] border-brand-dark min-h-screen flex flex-col pt-[80px];
+}
+
+.section-label {
+  @apply font-mono text-[15px] text-brand-secondary uppercase mb-6 flex items-center gap-2 border-l-3 border-brand-primary pl-2;
+}
+
+.glass-nav {
+  @apply bg-brand-bg border-b-2 border-brand-dark;
+}
+
+.card-hover {
+  @apply bg-white border border-brand-line p-8 transition-all hover:border-brand-dark shadow-none;
+}
+
+.btn-primary {
+  @apply px-6 py-3 rounded-xl bg-brand-dark text-white font-bold text-xs uppercase tracking-widest transition-all hover:bg-brand-primary active:scale-95;
+}
+
+.btn-outline {
+  @apply px-6 py-3 rounded-xl border-2 border-brand-dark text-brand-dark font-bold text-xs uppercase tracking-widest transition-all hover:bg-brand-dark hover:text-white active:scale-95;
+}
