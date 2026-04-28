@@ -271,14 +271,14 @@ const Experience = () => {
     {
       role: "Research Associate",
       company: "BA-AI LAB – UEL",
-      period: "2025 - Present",
-      tasks: ["Architecting AI-powered n8n automation workflows", "Synthesizing research on practical AI integrations", "Evaluating AI script generation via semantic metrics"]
+      period: "Oct 2025 - Present",
+      tasks: ["Research practical applications of AI in business, education, and technology-driven industries", "Built an AI-powered automation workflow using n8n to transform user prompts into video scripts and generate short-form video content", "Integrated AI models and automation tools to support script generation, content structuring, and video production within an end-to-end workflow", "Evaluated generated scripts against original story content using semantic similarity techniques to assess content relevance and consistency"]
     },
     {
-      role: "BA Intern",
+      role: "Business Analyst Intern",
       company: "THD CYBER SECURITY",
-      period: "2025 - 2025",
-      tasks: ["Requirement lifecycle management for security platforms", "Stakeholder collaboration for product roadmaps", "BPMN 2.0 process optimization"]
+      period: "Jun 2025 - Nov 2025",
+      tasks: ["Gathered and analyzed business requirements to ensure alignment with project scope and stakeholder needs","Created business workflows and BPMN diagrams to document processes and propose improvements","Prepared BA documentation, including SRS, BRD, User Guides, and requirement notes", "Supported project tracking, issue reporting, and stakeholder coordination with the Project Manager"]
     }
   ];
 
@@ -289,7 +289,7 @@ const Experience = () => {
            <SectionHeading subtitle="Career Evolution">Experience</SectionHeading>
            
         </div>
-        <div className="lg:col-span-8 lg:pl-8 flex flex-col gap-8">
+        <div className="lg:col-span-8 lg:pl-8 lg:w-[calc(125%+2rem)] flex flex-col gap-8">
           {items.map((item, idx) => (
             <div key={idx} className="border border-brand-line p-10 flex flex-col md:flex-row gap-8 items-start">
               <div className="font-mono text-[18px] text-brand-primary shrink-0 uppercase tracking-widest">{item.period}</div>
