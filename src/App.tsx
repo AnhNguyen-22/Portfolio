@@ -702,7 +702,7 @@ const Footer = () => (
         <a href="#about" className="hover:text-brand-primary transition-colors">About</a>
         <a href="#skills" className="hover:text-brand-primary transition-colors">Skills</a>
         <a href="#projects" className="hover:text-brand-primary transition-colors">Projects</a>
-        <a href="#" className="hover:text-brand-primary transition-colors flex items-center gap-2">LinkedIn <ExternalLink size={12} /></a>
+        <a href="https://www.linkedin.com/in/hoanganhnguyen05/" target="_blank" rel="noopener noreferrer" className="hover:text-brand-primary transition-colors flex items-center gap-2">LinkedIn <ExternalLink size={12} /></a>
       </div>
     </div>
   </footer>
