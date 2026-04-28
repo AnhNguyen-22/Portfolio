@@ -284,14 +284,12 @@ const Experience = () => {
 
   return (
     <section id="experience" className="py-24 px-10 bg-white border-b border-brand-line">
-      <div className="max-w-6xl mx-auto grid lg:grid-cols-12 gap-12">
+      <div className="max-w-6xl mx-auto grid lg:grid-cols-12 gap-16">
         <div className="lg:col-span-4">
-           <SectionHeading subtitle="Career Evolution">Timeline</SectionHeading>
-           <p className="text-base text-brand-secondary font-mono leading-relaxed mt-10">
-             Iterative professional growth through technical research and industrial internships.
-           </p>
+           <SectionHeading subtitle="Career Evolution">Experience</SectionHeading>
+           
         </div>
-        <div className="lg:col-span-8 flex flex-col gap-8">
+        <div className="lg:col-span-8 lg:pl-8 flex flex-col gap-8">
           {items.map((item, idx) => (
             <div key={idx} className="border border-brand-line p-10 flex flex-col md:flex-row gap-8 items-start">
               <div className="font-mono text-[18px] text-brand-primary shrink-0 uppercase tracking-widest">{item.period}</div>
